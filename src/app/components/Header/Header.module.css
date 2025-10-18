@@ -1,0 +1,225 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3rem;
+  width: 100vw;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.logoWht {
+  color: black;
+}
+
+.logoWht:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.logoBlk {
+  color: black;
+}
+
+.logoBlk:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 4vw;
+  width: 100vw;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 15rem;
+}
+
+.navItem {
+  position: relative;
+  color: black;
+}
+
+.navItem a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  transition: transform 0.2s ease;
+}
+
+.navItem a:hover {
+  animation: bobble 0.4s ease;
+  color: white;
+}
+
+@keyframes bobble {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-3px) rotate(-1deg);
+  }
+  60% {
+    transform: translateY(2px) rotate(1deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Flyout */
+.flyout {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.168);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-top: 8px;
+  width: fit-content;
+}
+
+.flyout ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flyout li {
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.flyout li:hover {
+  transform: translateX(5px);
+  color: white;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  color: white;
+}
+
+.hamburger div {
+  width: 24px;
+  height: 2px;
+  background: black;
+}
+
+.closeButton {
+  border: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: transparent;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: white;
+}
+
+.mobileNavItem {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  color: black;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+.links:hover {
+  color: white;
+}
+.mobileNavItem:hover {
+  animation: mobileBobble 0.3s ease-out;
+}
+
+@keyframes mobileBobble {
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-4px);
+  }
+  30% {
+    transform: translateY(3px);
+  }
+  45% {
+    transform: translateY(-2px);
+  }
+  60% {
+    transform: translateY(1px);
+  }
+  75% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Mobile Drawer */
+.mobileDrawer {
+  position: fixed;
+  top: 2;
+  right: 2;
+  width: 40%;
+  height: fit-content;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.168);
+  opacity: 45px;
+  box-shadow: -10px 0 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 1001;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dropdownItem {
+  wrap: nowrap;
+}

@@ -1,0 +1,72 @@
+.galleryWrapper {
+  height: 100vh; /* adjust based on number of items */
+  position: relative;
+  background: url("/camera2.jpg");
+}
+
+/* galleryContent just arranges text + image horizontally */
+.galleryContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* text column stays sticky on the left */
+.textColumn {
+  flex: 1;
+  position: sticky;
+  top: 0;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10vw;
+  padding-top: 5rem;
+}
+
+/* each text item */
+.textItem {
+  font-size: 2rem;
+  color: #aaaaaa50;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.textItem:hover {
+  color: red;
+}
+
+/* highlighted text */
+.textItem.active {
+  color: white;
+  font-weight: 600;
+  transform: translateX(10px);
+}
+
+/* image column on the right */
+.imageColumn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* image entrance + scale animation handled by GSAP */
+.imageColumn img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transform: scale(1);
+  box-shadow: 1px 1px 5px #00000092;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
+  border: 1px solid #2d2d2d92;
+  cursor: pointer;
+}
+
+.imageColumn img:hover {
+  transform: scale(1.05);
+}

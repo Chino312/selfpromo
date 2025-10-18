@@ -1,0 +1,23 @@
+.glassOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 2;
+  perspective: 63rem;
+}
+
+.glassPane {
+  position: absolute;
+  border-radius: 1.8rem;
+  backdrop-filter: blur(12px) brightness(1.2);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.3s ease;
+}

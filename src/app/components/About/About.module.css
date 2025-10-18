@@ -1,0 +1,27 @@
+.aboutSection {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* text can slide in from left */
+  padding: 4rem 2rem;
+  color: #fff;
+  background-color: #111; /* slightly lighter than overlay for contrast */
+  font-family: "Antic", sans-serif;
+}
+
+.aboutContent {
+  max-width: 800px;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.aboutText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
