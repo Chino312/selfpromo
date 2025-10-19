@@ -7,8 +7,8 @@
   justify-content: center;
   align-items: flex-start; /* text can slide in from left */
   padding: 4rem 2rem;
-  color: #fff;
-  background-color: #111; /* slightly lighter than overlay for contrast */
+  color: balck;
+  background: url("/background2.jpg") no-repeat center center fixed;
   font-family: "Antic", sans-serif;
 }
 
