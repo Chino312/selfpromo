@@ -1,2 +1,5 @@
 .page {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2rem;
 }

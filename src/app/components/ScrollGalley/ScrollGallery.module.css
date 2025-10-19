@@ -1,7 +1,7 @@
 .galleryWrapper {
   height: 100vh; /* adjust based on number of items */
   position: relative;
-  background: url("/camera2.jpg");
+  background: url("/background2.jpg");
 }
 
 /* galleryContent just arranges text + image horizontally */
@@ -35,12 +35,12 @@
 }
 
 .textItem:hover {
-  color: red;
+  color: rgba(52, 52, 52, 0.544);
 }
 
 /* highlighted text */
 .textItem.active {
-  color: white;
+  color: black;
   font-weight: 600;
   transform: translateX(10px);
 }

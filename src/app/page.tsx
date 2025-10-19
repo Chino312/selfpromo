@@ -4,6 +4,7 @@ import About from "./components/About/About";
 import ScrollGallery from "./components/ScrollGalley/ScrollGallery";
 import { galleryItems } from "./constants/constants";
 import HorizontalScroll from "./components/HorizontalScroll/HorizontalScroll";
+import Filmography from "./components/Filography/Filmography";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
           <h2 style={{ marginTop: "2rem" }}>Section 3</h2>
         </div>
       </HorizontalScroll>
-      <div style={{ height: "100vh", backgroundColor: "lightblue" }}>Hello</div>
+      <Filmography />
     </div>
   );
 }
