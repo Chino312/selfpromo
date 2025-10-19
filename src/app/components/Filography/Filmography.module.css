@@ -105,6 +105,12 @@
   margin-bottom: 0.4rem;
 }
 
+.episode {
+  color: #bbb;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
 .rating {
   color: #f8d24b;
   font-size: 0.95rem;

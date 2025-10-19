@@ -1,0 +1,23 @@
+.stickyIcons {
+  position: fixed;
+  bottom: 20%;
+  right: 1rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 1000;
+}
+
+.stickyIcons .icon {
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.stickyIcons .icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}

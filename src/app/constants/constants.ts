@@ -48,3 +48,8 @@ export const galleryItems = [
     image: "/Baby.jpg",
   },
 ];
+
+export const name = "Gram Otero Livemore";
+export const subTitle = "Actor & Creative Portfolio";
+export const sendBtn = "Send";
+export const rights = "All rights reserved.";

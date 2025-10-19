@@ -130,6 +130,11 @@ const Filmography: React.FC = () => {
               <p className={styles.character}>
                 Role: {film.characters?.join(", ") || "Unknown"}
               </p>
+              <p className={styles.episode}>
+                {film.episodeCount
+                  ? `Episodes: ${film.episodeCount}`
+                  : `Category: ${film.category}`}
+              </p>
               {film.title.rating?.aggregateRating && (
                 <p className={styles.rating}>
                   ⭐ {film.title.rating.aggregateRating.toFixed(1)}
