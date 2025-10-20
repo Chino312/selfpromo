@@ -18,7 +18,7 @@
   flex: 1;
   position: sticky;
   top: 0;
-  height: 80vh;
+  height: 89vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,13 +31,7 @@
   font-size: 2rem;
   color: #aaaaaa50;
   transition: all 0.4s ease;
-  cursor: pointer;
 }
-
-.textItem:hover {
-  color: rgba(52, 52, 52, 0.544);
-}
-
 /* highlighted text */
 .textItem.active {
   color: black;
@@ -47,6 +41,8 @@
 
 /* image column on the right */
 .imageColumn {
+  margin-top: 150px;
+  margin-right: 100px;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -60,9 +56,7 @@
   border-radius: 5px;
   transform: scale(1);
   box-shadow: 1px 1px 5px #00000092;
-  transition:
-    transform 0.5s ease,
-    opacity 0.5s ease;
+  transition: transform 0.5s ease;
   border: 1px solid #2d2d2d92;
   cursor: pointer;
 }
